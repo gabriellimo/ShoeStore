@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="login_button">login</string>
+    <string name="store_name">D\'BEST</string>
+    <string name="store_slogan">shoes store</string>
+    <string name="login_hint">type your e-mail</string>
+    <string name="password_hint">*******</string>
+    <string name="register">New user? Register here</string>
+    <string name="generic_label">D\'BEST</string>
+    <string name="welcome">Welcome</string>
+    <string name="instructions">Instructions</string>
+</resources>
