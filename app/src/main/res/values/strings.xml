@@ -3,10 +3,24 @@
     <string name="login_button">login</string>
     <string name="store_name">D\'BEST</string>
     <string name="store_slogan">shoes store</string>
-    <string name="login_hint">type your e-mail</string>
-    <string name="password_hint">*******</string>
+    <string name="login_hint">e-mail</string>
+    <string name="password_hint">password</string>
     <string name="register">New user? Register here</string>
     <string name="generic_label">D\'BEST</string>
     <string name="welcome">Welcome</string>
     <string name="instructions">Instructions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_mark">\?</string>
+    <string name="instructions_title">This is pretty straightforward</string>
+    <string name="instructions_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="start">Start</string>
+    <string name="form_title">new shoes</string>
+    <string name="shoe_name">Reference</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Size</string>
+    <string name="shoe_description">Description</string>
+    <string name="submit">submit</string>
+    <string name="cancel">cancel</string>
+    <string name="logout_item">Logout</string>
 </resources>

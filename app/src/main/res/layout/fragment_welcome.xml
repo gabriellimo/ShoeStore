@@ -6,8 +6,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/primaryColor">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -21,7 +20,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/logo_text"
-
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             android:text="@string/welcome"
@@ -50,17 +48,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/store_slogan_logo"/>
 
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@color/secondaryColor"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guideline">
-        </View>
-
         <Button
             android:id="@+id/instructions_button"
             android:layout_width="wrap_content"
@@ -71,8 +58,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:background="@color/primaryDarkColor"/>
+            android:background="@color/primaryDarkColor"
+            android:textColor="@color/textColor"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

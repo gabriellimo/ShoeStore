@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
-        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -18,29 +18,24 @@
 
     <style name="store_logo">
         <item name="android:fontFamily">@font/roboto</item>
-        <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:textSize">35sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryColor</item>
     </style>
 
     <style name="store_slogan_logo">
-        <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:textSize">22sp</item>
         <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/accentColor</item>
     </style>
 
-    <style name="buttons">
-        <item name="android:background">@color/primaryDarkColor</item>
-        <item name="android:fontFamily">@font/roboto</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textColor">@color/primaryTextColor</item>
-    </style>
-
-    <style name="login_edit">
-        <item name="android:textColor">@color/primaryTextColor</item>
-        <item name="android:textColorHint">@color/secondaryColor</item>
+    <style name="edit_style">
         <item name="android:textSize">20sp</item>
-        <item name="android:backgroundTint">@color/secondaryColor</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@color/primaryDarkColor</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
 </resources>

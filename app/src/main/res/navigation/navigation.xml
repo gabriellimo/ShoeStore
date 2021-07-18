@@ -5,6 +5,12 @@
     android:id="@+id/navigation"
     app:startDestination="@+id/login_fragment">
 
+    <action
+        android:id="@+id/logout"
+        app:destination="@id/login_fragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"/>
+
     <fragment
         android:id="@+id/login_fragment"
         android:name="com.udacity.shoestore.LoginFragment"
@@ -12,7 +18,7 @@
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
-            app:destination="@+id/welcome_fragment"
+            app:destination="@id/welcome_fragment"
             app:enterAnim="@anim/slide_in"
             app:exitAnim="@anim/slide_out" />
     </fragment>
@@ -21,7 +27,49 @@
         android:id="@+id/welcome_fragment"
         android:name="com.udacity.shoestore.WelcomeFragment"
         android:label="@string/generic_label"
-        tools:layout="@layout/fragment_welcome"/>
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/instruction_fragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/instruction_fragment"
+        android:name="com.udacity.shoestore.InstructionFragment"
+        android:label="@string/generic_label"
+        tools:layout="@layout/fragment_instruction">
+
+        <action
+            android:id="@+id/tempAction"
+            app:destination="@id/shoe_detail_fragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/shoe_detail_fragment"
+        android:name="com.udacity.shoestore.ShoeDetailFragment"
+        android:label="@string/generic_label"
+        tools:layout="@layout/fragment_shoe_detail">
+
+        <action
+            android:id="@+id/action_shoeDetailFrament_to_shoeListFragment_cancel"
+            app:destination="@id/instruction_fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_shoeDetailFrament_to_shoeListFragment_submit"
+            app:destination="@id/instruction_fragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"/>
+
+
+
+    </fragment>
 
 
 </navigation>
