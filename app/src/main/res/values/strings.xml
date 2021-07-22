@@ -23,4 +23,5 @@
     <string name="submit">submit</string>
     <string name="cancel">cancel</string>
     <string name="logout_item">Logout</string>
+    <string name="add_shoe_description">Add a new shoe to the list</string>
 </resources>

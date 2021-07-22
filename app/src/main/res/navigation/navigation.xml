@@ -40,13 +40,24 @@
         android:name="com.udacity.shoestore.InstructionFragment"
         android:label="@string/generic_label"
         tools:layout="@layout/fragment_instruction">
-
         <action
-            android:id="@+id/tempAction"
-            app:destination="@id/shoe_detail_fragment"
+            android:id="@+id/instructionFragment_to_shoeListFragment"
+            app:destination="@id/shoe_list_fragment"
             app:enterAnim="@anim/slide_in"
             app:exitAnim="@anim/slide_out"/>
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/shoe_list_fragment"
+        android:name="com.udacity.shoestore.ShoeListFragment"
+        android:label="fragment_shoe_list"
+        tools:layout="@layout/fragment_shoe_list">
+        <action
+            android:id="@+id/shoeListFragment_to_shoeDetailFragment"
+            app:destination="@id/shoe_detail_fragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"/>
     </fragment>
 
     <fragment
@@ -55,17 +66,23 @@
         android:label="@string/generic_label"
         tools:layout="@layout/fragment_shoe_detail">
 
+        <!--        TODO use a more meaningful  animation-->
         <action
-            android:id="@+id/action_shoeDetailFrament_to_shoeListFragment_cancel"
-            app:destination="@id/instruction_fragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right"/>
+            android:id="@+id/action_shoeDetailFragment_to_shoeListFragment_cancel"
+            app:destination="@id/shoe_list_fragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popUpTo="@id/shoe_list_fragment"
+            app:popUpToInclusive="true"/>
 
+        <!--        TODO use a more meaningful  animation-->
         <action
-            android:id="@+id/action_shoeDetailFrament_to_shoeListFragment_submit"
-            app:destination="@id/instruction_fragment"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right"/>
+            android:id="@+id/action_shoeDetailFragment_to_shoeListFragment_submit"
+            app:destination="@id/shoe_list_fragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popUpTo="@id/shoe_list_fragment"
+            app:popUpToInclusive="true"/>
 
 
 

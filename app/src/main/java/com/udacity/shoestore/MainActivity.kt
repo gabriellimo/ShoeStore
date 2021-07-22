@@ -5,21 +5,26 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.databinding.ActivityMainBinding
+import com.udacity.shoestore.models.Shoe
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
+    private lateinit var viewModel: MainActivityViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         navController = this.findNavController(R.id.navhost)
+
+        viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
 
         //the project description on UDACITY asks for an AppBarConfiguration.. It doesn't make much sense to me, cuz I don't really change anything
         // in it, and  NavigationUI.setupActionBarWithNavController builds one instance of this class on its own. also, navController.navigateUp()
