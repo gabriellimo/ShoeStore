@@ -84,6 +84,7 @@
                         android:id="@+id/shoes_size_edit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
                         android:hint="@string/shoe_size"
                         style="@style/edit_style"/>
 

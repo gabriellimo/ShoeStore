@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <TextView
+            android:id="@+id/shoes_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/shoes_company_text"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Shox"
+            style="@style/list_text_style"/>
+
+        <TextView
+            android:id="@+id/shoes_company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/shoes_name_text"
+            app:layout_constraintEnd_toStartOf="@id/shoes_size_text"
+            app:layout_constraintBaseline_toBaselineOf="@id/shoes_name_text"
+            tools:text="Nike"
+            style="@style/list_text_style"/>
+
+        <TextView
+            android:id="@+id/shoes_size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/shoes_company_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@id/shoes_name_text"
+            tools:text="42"
+            style="@style/list_text_style"/>
+
+        <TextView
+            android:id="@+id/shoes_description_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/shoes_name_text"
+            app:layout_constraintStart_toStartOf="@id/shoes_name_text"
+            app:layout_constraintEnd_toEndOf="@id/shoes_size_text"
+            android:gravity="center_horizontal"
+            tools:text="lorem ipsum"
+            style="@style/list_text_style"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

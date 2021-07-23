@@ -38,4 +38,9 @@
         <item name="android:textColor">@color/textColor</item>
     </style>
 
+    <style name="list_text_style">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>

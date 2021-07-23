@@ -26,6 +26,11 @@ class ShoeDetailFragment : Fragment() {
         }
 
         binding.submitButton.setOnClickListener { v: View ->
+            val name = binding.shoesNameEdit.text.toString()
+            val size = binding.shoesSizeEdit.text.toString().toDouble()
+            val company = binding.shoesCompanyEdit.text.toString()
+            val description = binding.shoesDescriptionEdit.text.toString()
+            viewModel.addShoe(name,company,size,description)
             v.findNavController().navigate(R.id.action_shoeDetailFragment_to_shoeListFragment_submit)
         }
 

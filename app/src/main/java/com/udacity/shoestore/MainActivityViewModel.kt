@@ -17,10 +17,7 @@ class MainActivityViewModel : ViewModel() {
     }
 
     init {
-        val list2 = listOf(
-            Shoe("shox", 42.0, "nike", "foi")
-        ) as MutableList<Shoe>
-        _list.value = list2
+        _list.value = mutableListOf()
     }
 
 }
