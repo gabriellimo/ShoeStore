@@ -6,6 +6,9 @@
     tools:context="com.udacity.shoestore.LoginFragment">
 
 
+<!--    It looked easier to position the views where I wanted with ConstraintLayout.
+I wanted the login edits to be centered on screen and the LOGO centered between the top of the "form"
+and the top of the screen-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

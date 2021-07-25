@@ -30,10 +30,4 @@ class LoginFragment : Fragment() {
         }
         return binding.root
     }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        val item = menu.findItem(R.id.logout)
-        item.isVisible = false
-        super.onCreateOptionsMenu(menu, inflater)
-    }
 }
